@@ -1,7 +1,5 @@
 # workbench
 
-> 简易工作台
-
 ## Build Setup
 
 ``` bash

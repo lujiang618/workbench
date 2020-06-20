@@ -13,7 +13,7 @@ services:
       - ../api:/app                      # 将主机的code-api文件夹(java代码)映射到容器内的app文件夹
       - ./logs/:/app/log                # 映射容器产生的日志到主机的logs文件夹
     ports:                              # 映射端口
-      - "9101:9101"
+      - "8802:8802"
     #command: mvn clean spring-boot:run -Dspring-boot.run.profiles=dev '-Dmaven.test.skip=true' # 容器创建后执行命令运行springboot项目
 
   web:                                  # 前端node容器(运行nginx中的Vue项目)
@@ -25,6 +25,6 @@ services:
     environment:
       TZ: Asia/Shanghai
     ports:
-      - "8101:8101"                      # 映射端口
+      - "8801:8801"                      # 映射端口
 #    depends_on:                          # 依赖于api容器，被依赖容器启动后此web容器才可启动
 #      - api

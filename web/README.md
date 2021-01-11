@@ -1,33 +1,106 @@
-# workbench
+English | [简体中文](./README.zh-CN.md)
 
-## Build Setup
+<h1 align="center">Ant Design Vue Pro</h1>
+<div align="center">
+An out-of-box UI solution for enterprise applications as a Vue boilerplate. based on  <a href="https://vuecomponent.github.io/ant-design-vue/docs/vue/introduce-cn/" target="_blank">Ant Design of Vue</a>
+</div>
 
-``` bash
-# install dependencies
-npm install
+<div align="center">
 
-# serve with hot reload at localhost:8080
-npm run dev
+[![License](https://img.shields.io/npm/l/package.json.svg?style=flat)](https://github.com/vueComponent/ant-design-vue-pro/blob/master/LICENSE)
+[![Release](https://img.shields.io/github/release/vueComponent/ant-design-vue-pro.svg?style=flat)](https://github.com/vueComponent/ant-design-vue-pro/releases/latest)
+[![Travis branch](https://travis-ci.org/vueComponent/ant-design-vue-pro.svg?branch=master)](https://travis-ci.org/vueComponent/ant-design-vue-pro)
 
-# build for production with minification
-npm run build
+</div>
 
-# build for production and view the bundle analyzer report
-npm run build --report
+- Preview: https://preview.pro.antdv.com
+- Home Page: https://pro.antdv.com
+- Documentation: https://pro.antdv.com/docs/getting-started
+- ChangeLog: https://pro.antdv.com/docs/changelog
+- FAQ: https://pro.antdv.com/docs/faq
 
-# run unit tests
-npm run unit
+Overview
+----
 
-# run e2e tests
-npm run e2e
+![dashboard](https://static-2.loacg.com/open/static/github/SP1.png)
 
-# run all tests
-npm test
+### Env and dependencies
+
+- node
+- yarn
+- webpack
+- eslint
+- @vue/cli ~3
+- [ant-design-vue](https://github.com/vueComponent/ant-design-vue) - Ant Design Of Vue 
+- [vue-cropper](https://github.com/xyxiao001/vue-cropper) - Picture edit
+- [@antv/g2](https://antv.alipay.com/zh-cn/index.html) - AntV G2
+- [Viser-vue](https://viserjs.github.io/docs.html#/viser/guide/installation)  - Antv/G2 of Vue
+
+> Note:  [Yarn](https://yarnpkg.com/) package management is recommended, the exact same version loaded with the demo site of this project (yarn.lock) . but you can also use npm
+
+
+### Project setup
+
+- Clone repo
+```bash
+git clone https://github.com/vueComponent/ant-design-vue-pro.git
+cd ant-design-vue-pro
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-# workbench
+- Install dependencies
+```
+yarn install
+```
+
+- Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+- Compiles and minifies for production
+```
+yarn run build
+```
+
+- Lints and fixes files
+```
+yarn run lint
+```
 
 
-# 使用的组件库
-- [vue-beauty](https://fe-driver.github.io/vue-beauty/#/components/button)
+### Other
+
+- **IMPORTANT : About Issue feedback !! when opening Issue read [Issue / PR Contributing](https://github.com/vueComponent/ant-design-vue-pro/issues/90)**
+
+- [Vue-cli3](https://cli.vuejs.org/guide/) used by the project.
+
+- Disable Eslint (not recommended): remove `eslintConfig`  field in `package.json`  and `vue.config.js` field `lintOnSave: false`
+
+- Load on Demand `/src/main.js` L14, in `import './core/lazy_use'`, `import './core/use''`. more [load-on-demand.md](./docs/load-on-demand.md)
+
+- Customize Theme:  [Custom Theme Config (@kokoroli)](https://github.com/kokoroli/antd-awesome/blob/master/docs/Ant_Design_%E6%A0%B7%E5%BC%8F%E8%A6%86%E7%9B%96.md)
+
+- I18n: [locales (@musnow)](./src/locales/index.js)
+
+- Production env `mock` is disabled. use `src/mock/index.js`
+
+- pls use `release` version
+
+## Browsers support
+
+Modern browsers and IE10.
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
+| --- | --- | --- | --- | --- |
+| IE10, Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
+
+
+## Contributors
+
+This project exists thanks to all the people who contribute. 
+<a href="https://github.com/vueComponent/ant-design-vue-pro/graphs/contributors"><img src="https://opencollective.com/ant-design-pro-vue/contributors.svg?width=890&button=false" /></a>
+
+# 参考资料
++ [antdv](https://www.antdv.com/docs/vue/introduce-cn/)
++ [pro.antdv docs](https://pro.antdv.com/docs/getting-started)
++ [pro.antdv demo](https://preview.pro.antdv.com/user/login?redirect=%2F)

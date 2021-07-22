@@ -18,7 +18,7 @@ require (
 	github.com/sirupsen/logrus v1.7.0
 	github.com/spf13/viper v1.7.1
 	github.com/ugorji/go v1.2.3 // indirect
-	go.mongodb.org/mongo-driver v1.4.4
+	go.mongodb.org/mongo-driver v1.5.1
 	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad // indirect
 	golang.org/x/sys v0.0.0-20210110051926-789bb1bd4061 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect

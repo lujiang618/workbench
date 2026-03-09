@@ -1,0 +1,13 @@
+{
+  "name": "workbench",
+  "version": "1.0.0",
+  "description": "个人工作台 - 管理常用连接",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

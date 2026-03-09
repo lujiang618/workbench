@@ -1,0 +1,16 @@
+[Unit]
+Description=Workbench Service
+After=network.target
+
+[Service]
+Type=simple
+User=dx
+WorkingDirectory=/home/dx/data/web/workbench
+ExecStart=/home/dx/.nvm/versions/node/v22.22.0/bin/node /home/dx/data/web/workbench/server.js
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

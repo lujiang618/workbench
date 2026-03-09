@@ -1,6 +1,4 @@
-
-# Editor directories and files
+node_modules
 .idea
 
-
-
+.claude
